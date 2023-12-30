@@ -21,3 +21,9 @@ console.table([name,age,isLogedIn,state]);
 
 
 // BigInt => BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number 
+console.log(typeof "Rohit");
+console.log(typeof null);
+console.log(typeof undefined);
+console.log(typeof Symbol);
+console.log(typeof Number);
+console.table([typeof undefined], [typeof Symbol,[typeof Number]]);
