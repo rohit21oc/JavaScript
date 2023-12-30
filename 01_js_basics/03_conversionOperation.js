@@ -15,3 +15,7 @@ let numb = 10;
 let str = String(numb);
 console.log(str);
 console.log(typeof str);
+
+// Boolean
+// true =>0
+// false =>1
