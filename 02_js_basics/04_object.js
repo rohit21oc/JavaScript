@@ -53,3 +53,12 @@ const arr = [
     }
 ]
 console.log(arr);
+
+const course ={
+    courseName : "JavaScript",
+    price: 999,
+    courseInstructer: "Rohit"
+}
+const {courseInstructer:instructer} = course;
+console.log(course.price);
+console.log(instructer);
