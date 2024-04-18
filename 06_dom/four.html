@@ -10,12 +10,46 @@
         <li>JavaScipt</li>
     </ul>
     <script>
+         // First Method
         function addlanguage(languane){
             let li = document.createElement('li');
             li.innerHTML = `${languane}`;
             document.querySelector('.proLang').appendChild(li);
         }
-        addlanguage("Python")
+        addlanguage("Python");
+        addlanguage("Java");
+
+        // Second Method
+        function addOptiLanhguage(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.proLang').appendChild(li)
+        }
+        addOptiLanhguage('goLanguage');
+// practice
+        function addlanguage(programmingLanguage){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(programmingLanguage));
+            document.querySelector('.proLang').appendChild(li);
+        }
+        addlanguage('C++')
+        // Edit
+
+        // const secondLang = document.querySelector('li:nth-child(2)')
+        const secondLang = document.querySelector('li:first-child')
+        // const secondLang = document.querySelector('li:last-child')
+        // secondLang.innerHTML = 'mojo'
+        const newli = document.createElement('li');
+        newli.textContent = 'Mojo';
+        secondLang.replaceWith(newli)
+
+        // edit
+        const editLang = document.querySelector('li:first-child');
+        editLang.outerHTML = '<li>C#</li>'
+
+        // remove
+        const removeLang = document.querySelector('li:last-child')
+        removeLang.remove()
 
     </script>
 </body>
