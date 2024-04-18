@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <ul class="proLang">
+        <li>JavaScipt</li>
+    </ul>
+    <script>
+        function addlanguage(languane){
+            let li = document.createElement('li');
+            li.innerHTML = `${languane}`;
+            document.querySelector('.proLang').appendChild(li);
+        }
+        addlanguage("Python")
+
+    </script>
+</body>
+</html>
